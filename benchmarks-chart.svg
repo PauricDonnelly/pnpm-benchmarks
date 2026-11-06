@@ -23,44 +23,64 @@
 <text x="1645" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="1645" dy="0">Updated</tspan><tspan x="1645" dy="20">dependencies</tspan></text>
 <text x="74" y="413" font-size="18" font-weight="600">npm</text>
 <text x="74" y="434" font-size="13" fill="#647178">12.2.2</text>
-<rect x="373" y="388" width="144" height="62" rx="9" fill="rgb(206,123,88)"/>
+<rect x="373" y="388" width="144" height="62" rx="9" fill="rgb(206,121,87)"/>
 <text x="445" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">14.9 s</text>
-<rect x="523" y="388" width="144" height="62" rx="9" fill="rgb(227,193,114)"/>
+<rect x="523" y="388" width="144" height="62" rx="9" fill="rgb(227,192,113)"/>
 <text x="595" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">3.2 s</text>
-<rect x="673" y="388" width="144" height="62" rx="9" fill="rgb(221,174,107)"/>
+<rect x="673" y="388" width="144" height="62" rx="9" fill="rgb(221,173,106)"/>
 <text x="745" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">4.8 s</text>
-<rect x="823" y="388" width="144" height="62" rx="9" fill="rgb(227,192,113)"/>
+<rect x="823" y="388" width="144" height="62" rx="9" fill="rgb(227,191,113)"/>
 <text x="895" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">3.2 s</text>
-<rect x="973" y="388" width="144" height="62" rx="9" fill="rgb(222,176,107)"/>
-<text x="1045" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">4.6 s</text>
-<rect x="1123" y="388" width="144" height="62" rx="9" fill="rgb(228,196,115)"/>
+<rect x="973" y="388" width="144" height="62" rx="9" fill="rgb(223,179,108)"/>
+<text x="1045" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">4.2 s</text>
+<rect x="1123" y="388" width="144" height="62" rx="9" fill="rgb(228,195,115)"/>
 <text x="1195" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">2.9 s</text>
-<rect x="1273" y="388" width="144" height="62" rx="9" fill="rgb(150,180,142)"/>
+<rect x="1273" y="388" width="144" height="62" rx="9" fill="rgb(151,180,142)"/>
 <text x="1345" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">400 ms</text>
-<rect x="1423" y="388" width="144" height="62" rx="9" fill="rgb(164,183,138)"/>
-<text x="1495" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">554 ms</text>
-<rect x="1573" y="388" width="144" height="62" rx="9" fill="rgb(209,134,92)"/>
-<text x="1645" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">11.7 s</text>
-<text x="74" y="481" font-size="18" font-weight="600">pnpm 12</text>
-<text x="74" y="502" font-size="13" fill="#647178">12.18.0</text>
-<rect x="373" y="456" width="144" height="62" rx="9" fill="rgb(199,99,79)"/>
-<text x="445" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">25.0 s</text>
-<rect x="523" y="456" width="144" height="62" rx="9" fill="rgb(57,141,126)"/>
-<text x="595" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">52 ms</text>
-<rect x="673" y="456" width="144" height="62" rx="9" fill="rgb(200,103,81)"/>
-<text x="745" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">22.7 s</text>
-<rect x="823" y="456" width="144" height="62" rx="9" fill="rgb(63,143,127)"/>
-<text x="895" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">59 ms</text>
-<rect x="973" y="456" width="144" height="62" rx="9" fill="rgb(175,186,134)"/>
-<text x="1045" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">735 ms</text>
-<rect x="1123" y="456" width="144" height="62" rx="9" fill="rgb(171,185,136)"/>
-<text x="1195" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">662 ms</text>
-<rect x="1273" y="456" width="144" height="62" rx="9" fill="rgb(24,126,117)"/>
-<text x="1345" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">26 ms</text>
-<rect x="1423" y="456" width="144" height="62" rx="9" fill="rgb(32,130,119)"/>
-<text x="1495" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">31 ms</text>
-<rect x="1573" y="456" width="144" height="62" rx="9" fill="rgb(199,100,79)"/>
-<text x="1645" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">24.7 s</text>
+<rect x="1423" y="388" width="144" height="62" rx="9" fill="rgb(154,181,141)"/>
+<text x="1495" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">428 ms</text>
+<rect x="1573" y="388" width="144" height="62" rx="9" fill="rgb(210,136,93)"/>
+<text x="1645" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">10.8 s</text>
+<text x="74" y="481" font-size="18" font-weight="600">pnpm 11</text>
+<text x="74" y="502" font-size="13" fill="#647178">11.28.9</text>
+<rect x="373" y="456" width="144" height="62" rx="9" fill="rgb(217,161,102)"/>
+<text x="445" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">6.3 s</text>
+<rect x="523" y="456" width="144" height="62" rx="9" fill="rgb(142,178,145)"/>
+<text x="595" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">324 ms</text>
+<rect x="673" y="456" width="144" height="62" rx="9" fill="rgb(223,178,108)"/>
+<text x="745" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">4.3 s</text>
+<rect x="823" y="456" width="144" height="62" rx="9" fill="rgb(143,178,145)"/>
+<text x="895" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">326 ms</text>
+<rect x="973" y="456" width="144" height="62" rx="9" fill="rgb(225,186,111)"/>
+<text x="1045" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">3.6 s</text>
+<rect x="1123" y="456" width="144" height="62" rx="9" fill="rgb(228,196,115)"/>
+<text x="1195" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">2.9 s</text>
+<rect x="1273" y="456" width="144" height="62" rx="9" fill="rgb(138,177,147)"/>
+<text x="1345" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">292 ms</text>
+<rect x="1423" y="456" width="144" height="62" rx="9" fill="rgb(138,177,147)"/>
+<text x="1495" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">293 ms</text>
+<rect x="1573" y="456" width="144" height="62" rx="9" fill="rgb(223,178,108)"/>
+<text x="1645" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">4.3 s</text>
+<text x="74" y="549" font-size="18" font-weight="600">pnpm 12</text>
+<text x="74" y="570" font-size="13" fill="#647178">12.18.0</text>
+<rect x="373" y="524" width="144" height="62" rx="9" fill="rgb(200,101,80)"/>
+<text x="445" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">23.1 s</text>
+<rect x="523" y="524" width="144" height="62" rx="9" fill="rgb(57,141,126)"/>
+<text x="595" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">52 ms</text>
+<rect x="673" y="524" width="144" height="62" rx="9" fill="rgb(200,102,80)"/>
+<text x="745" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">22.6 s</text>
+<rect x="823" y="524" width="144" height="62" rx="9" fill="rgb(63,143,127)"/>
+<text x="895" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">59 ms</text>
+<rect x="973" y="524" width="144" height="62" rx="9" fill="rgb(175,186,134)"/>
+<text x="1045" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">727 ms</text>
+<rect x="1123" y="524" width="144" height="62" rx="9" fill="rgb(171,185,136)"/>
+<text x="1195" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">652 ms</text>
+<rect x="1273" y="524" width="144" height="62" rx="9" fill="rgb(24,126,117)"/>
+<text x="1345" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">26 ms</text>
+<rect x="1423" y="524" width="144" height="62" rx="9" fill="rgb(32,130,119)"/>
+<text x="1495" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">31 ms</text>
+<rect x="1573" y="524" width="144" height="62" rx="9" fill="rgb(199,99,79)"/>
+<text x="1645" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">24.2 s</text>
 <text x="74" y="595" font-size="24" font-weight="700">Test scenarios</text>
 <text x="74" y="619" font-family="Menlo, Monaco, monospace" font-size="12" fill="#536168">npm install --no-fund --no-audit --ignore-scripts --cache=cache --legacy-peer-deps --registry=&lt;benchmark-registry&gt;</text>
 <text x="74" y="638" font-family="Menlo, Monaco, monospace" font-size="12" fill="#536168">pnpm install --ignore-scripts --registry=&lt;benchmark-registry&gt;</text>
@@ -86,5 +106,5 @@
 <rect x="74" y="916" width="1650" height="58" rx="8" fill="#e5e9e3"/>
 <rect x="74" y="916" width="4" height="58" rx="2" fill="#187e75"/>
 <text x="96" y="940" font-size="12" font-weight="700" letter-spacing="1" fill="#536168">CACHE NOTE</text>
-<text x="96" y="960" font-size="14" fill="#202c33">Warm-cache cases test reusing downloaded packages, as when CI restores a package-manager cache. The temporary cache lives at TMP/&lt;manager-scenario&gt;/&lt;fixture&gt;/cache and is cleared between scenarios.</text>
+<text x="96" y="960" font-size="14" fill="#202c33">Warm-cache tests check whether installs are faster when cached packages can be reused, as in CI after restoring a cache. The temporary cache lives at TMP/&lt;manager-scenario&gt;/&lt;fixture&gt;/cache and is cleared between scenarios.</text>
 </g></svg>

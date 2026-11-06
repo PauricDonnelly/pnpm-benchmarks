@@ -23,6 +23,7 @@ const scenarios = [
 ]
 const managers = [
   ['npm', 'npm'],
+  ['pnpm11', 'pnpm 11'],
   ['pnpm12', 'pnpm 12'],
 ]
 const stops = [
@@ -105,7 +106,7 @@ function appendCacheNote (parts) {
   parts.push('<rect x="74" y="916" width="1650" height="58" rx="8" fill="#e5e9e3"/>')
   parts.push('<rect x="74" y="916" width="4" height="58" rx="2" fill="#187e75"/>')
   parts.push('<text x="96" y="940" font-size="12" font-weight="700" letter-spacing="1" fill="#536168">CACHE NOTE</text>')
-  parts.push(`<text x="96" y="960" font-size="14" fill="#202c33">${escapeXml('Warm-cache cases test reusing downloaded packages, as when CI restores a package-manager cache. The temporary cache lives at TMP/<manager-scenario>/<fixture>/cache and is cleared between scenarios.')}</text>`)
+  parts.push(`<text x="96" y="960" font-size="14" fill="#202c33">${escapeXml('Warm-cache tests check whether installs are faster when cached packages can be reused, as in CI after restoring a cache. The temporary cache lives at TMP/<manager-scenario>/<fixture>/cache and is cleared between scenarios.')}</text>`)
 }
 
 function createChartSvg (fixture, fixtureManagers, minimum, maximum) {

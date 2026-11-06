@@ -1,5 +1,5 @@
 {
-  "measuredAt": "2026-11-06T17:28:31.075Z",
+  "measuredAt": "2026-11-06T21:43:53.886Z",
   "node": "v24.19.0",
   "pnpr": "0.1.0-alpha.18",
   "network": {
@@ -17,109 +17,39 @@
             "withWarmModules": 3191,
             "withLockfile": 4817,
             "withWarmCacheAndModules": 3249,
-            "withWarmCache": 4596,
+            "withWarmCache": 4239,
             "withWarmCacheAndLockfile": 2938,
             "withWarmModulesAndLockfile": 400,
-            "repeatInstall": 554,
-            "updatedDependencies": 11652
+            "repeatInstall": 428,
+            "updatedDependencies": 10791
           }
         },
         "pnpm11": {
           "version": "11.28.9",
           "results": {
-            "firstInstall": 6735,
+            "firstInstall": 6302,
             "withWarmModules": 324,
-            "withLockfile": 5142,
-            "withWarmCacheAndModules": 333,
-            "withWarmCache": 3901,
-            "withWarmCacheAndLockfile": 4089,
+            "withLockfile": 4281,
+            "withWarmCacheAndModules": 326,
+            "withWarmCache": 3623,
+            "withWarmCacheAndLockfile": 2893,
             "withWarmModulesAndLockfile": 292,
             "repeatInstall": 293,
-            "updatedDependencies": 5081
+            "updatedDependencies": 4314
           }
         },
         "pnpm12": {
           "version": "12.18.0",
           "results": {
-            "firstInstall": 24970,
+            "firstInstall": 23054,
             "withWarmModules": 52,
-            "withLockfile": 22692,
+            "withLockfile": 22558,
             "withWarmCacheAndModules": 59,
-            "withWarmCache": 735,
-            "withWarmCacheAndLockfile": 662,
+            "withWarmCache": 727,
+            "withWarmCacheAndLockfile": 652,
             "withWarmModulesAndLockfile": 26,
             "repeatInstall": 31,
-            "updatedDependencies": 24672
-          }
-        },
-        "pnpm12_global_virtual_store": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 25860,
-            "withWarmModules": 22740,
-            "withLockfile": 23280,
-            "withWarmCacheAndModules": 58,
-            "withWarmCache": 279,
-            "withWarmCacheAndLockfile": 138,
-            "withWarmModulesAndLockfile": 23315,
-            "repeatInstall": 30,
-            "updatedDependencies": 23660
-          }
-        },
-        "pnpm12_hoisted": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 27291,
-            "withWarmModules": 46,
-            "withLockfile": 23818,
-            "withWarmCacheAndModules": 60,
-            "withWarmCache": 648,
-            "withWarmCacheAndLockfile": 623,
-            "withWarmModulesAndLockfile": 25,
-            "repeatInstall": 33,
-            "updatedDependencies": 24425
-          }
-        },
-        "pnpm_pnpr": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 21912,
-            "withWarmModules": 54,
-            "withLockfile": 22944,
-            "withWarmCacheAndModules": 52,
-            "withWarmCache": 715,
-            "withWarmCacheAndLockfile": 694,
-            "withWarmModulesAndLockfile": 26,
-            "repeatInstall": 31,
-            "updatedDependencies": 22341
-          }
-        },
-        "yarn": {
-          "version": "6.0.0-rc.23",
-          "results": {
-            "firstInstall": 22658,
-            "withWarmModules": 14637,
-            "withLockfile": 21386,
-            "withWarmCacheAndModules": 6353,
-            "withWarmCache": 5666,
-            "withWarmCacheAndLockfile": 4446,
-            "withWarmModulesAndLockfile": 15020,
-            "repeatInstall": 4852,
-            "updatedDependencies": 11730
-          }
-        },
-        "bun": {
-          "version": "1.4.4",
-          "results": {
-            "firstInstall": 4084,
-            "withWarmModules": 3848,
-            "withLockfile": 3078,
-            "withWarmCacheAndModules": 2283,
-            "withWarmCache": 372,
-            "withWarmCacheAndLockfile": 308,
-            "withWarmModulesAndLockfile": 84,
-            "repeatInstall": 1080,
-            "updatedDependencies": 4121
+            "updatedDependencies": 24235
           }
         }
       }
@@ -135,8 +65,8 @@
             "withLockfile": 2408,
             "withWarmCacheAndModules": 3605,
             "withWarmCache": 1594,
-            "withWarmCacheAndLockfile": 1190,
-            "withWarmModulesAndLockfile": 369,
+            "withWarmCacheAndLockfile": 1141,
+            "withWarmModulesAndLockfile": 346,
             "repeatInstall": 340,
             "updatedDependencies": 11179
           }
@@ -148,7 +78,7 @@
             "withWarmModules": 294,
             "withLockfile": 2628,
             "withWarmCacheAndModules": 297,
-            "withWarmCache": 299014,
+            "withWarmCache": 1854,
             "withWarmCacheAndLockfile": 1252,
             "withWarmModulesAndLockfile": 274,
             "repeatInstall": 276,
@@ -168,76 +98,6 @@
             "repeatInstall": 27,
             "updatedDependencies": 27445
           }
-        },
-        "pnpm12_global_virtual_store": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 5636,
-            "withWarmModules": 4495,
-            "withLockfile": 4290,
-            "withWarmCacheAndModules": 46,
-            "withWarmCache": 132,
-            "withWarmCacheAndLockfile": 86,
-            "withWarmModulesAndLockfile": 4239,
-            "repeatInstall": 29,
-            "updatedDependencies": 20286
-          }
-        },
-        "pnpm12_hoisted": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 6841,
-            "withWarmModules": 45,
-            "withLockfile": 5413,
-            "withWarmCacheAndModules": 57,
-            "withWarmCache": 322,
-            "withWarmCacheAndLockfile": 342,
-            "withWarmModulesAndLockfile": 25,
-            "repeatInstall": 29,
-            "updatedDependencies": 20650
-          }
-        },
-        "pnpm_pnpr": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 5515,
-            "withWarmModules": 54,
-            "withLockfile": 5818,
-            "withWarmCacheAndModules": 53,
-            "withWarmCache": 309,
-            "withWarmCacheAndLockfile": 253,
-            "withWarmModulesAndLockfile": 43,
-            "repeatInstall": 32,
-            "updatedDependencies": 21992
-          }
-        },
-        "yarn": {
-          "version": "6.0.0-rc.23",
-          "results": {
-            "firstInstall": 7025,
-            "withWarmModules": 6793,
-            "withLockfile": 5592,
-            "withWarmCacheAndModules": 2023,
-            "withWarmCache": 1769,
-            "withWarmCacheAndLockfile": 1191,
-            "withWarmModulesAndLockfile": 6013,
-            "repeatInstall": 1295,
-            "updatedDependencies": 16818
-          }
-        },
-        "bun": {
-          "version": "1.4.4",
-          "results": {
-            "firstInstall": 2907,
-            "withWarmModules": 2742,
-            "withLockfile": 2353,
-            "withWarmCacheAndModules": 865,
-            "withWarmCache": 129,
-            "withWarmCacheAndLockfile": 113,
-            "withWarmModulesAndLockfile": 24,
-            "repeatInstall": 319,
-            "updatedDependencies": 3501
-          }
         }
       }
     },
@@ -254,21 +114,21 @@
             "withWarmCache": 7261,
             "withWarmCacheAndLockfile": 5494,
             "withWarmModulesAndLockfile": 467,
-            "repeatInstall": 630,
+            "repeatInstall": 576,
             "updatedDependencies": 10574
           }
         },
         "pnpm11": {
           "version": "11.28.9",
           "results": {
-            "firstInstall": 11071,
+            "firstInstall": 10968,
             "withWarmModules": 328,
             "withLockfile": 9213,
-            "withWarmCacheAndModules": 339,
+            "withWarmCacheAndModules": 330,
             "withWarmCache": 7364,
-            "withWarmCacheAndLockfile": 6547,
-            "withWarmModulesAndLockfile": 294,
-            "repeatInstall": 312,
+            "withWarmCacheAndLockfile": 4806,
+            "withWarmModulesAndLockfile": 293,
+            "repeatInstall": 293,
             "updatedDependencies": 6327
           }
         },
@@ -280,80 +140,10 @@
             "withLockfile": 37545,
             "withWarmCacheAndModules": 64,
             "withWarmCache": 1222,
-            "withWarmCacheAndLockfile": 1338,
+            "withWarmCacheAndLockfile": 1324,
             "withWarmModulesAndLockfile": 26,
-            "repeatInstall": 33,
-            "updatedDependencies": 30580
-          }
-        },
-        "pnpm12_global_virtual_store": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 39938,
-            "withWarmModules": 40555,
-            "withLockfile": 37561,
-            "withWarmCacheAndModules": 58,
-            "withWarmCache": 694,
-            "withWarmCacheAndLockfile": 152,
-            "withWarmModulesAndLockfile": 40531,
-            "repeatInstall": 34,
-            "updatedDependencies": 33973
-          }
-        },
-        "pnpm12_hoisted": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 45939,
-            "withWarmModules": 62,
-            "withLockfile": 45758,
-            "withWarmCacheAndModules": 56,
-            "withWarmCache": 1066,
-            "withWarmCacheAndLockfile": 1175,
-            "withWarmModulesAndLockfile": 25,
-            "repeatInstall": 35,
-            "updatedDependencies": 35410
-          }
-        },
-        "pnpm_pnpr": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 38758,
-            "withWarmModules": 75,
-            "withLockfile": 37269,
-            "withWarmCacheAndModules": 63,
-            "withWarmCache": 1205,
-            "withWarmCacheAndLockfile": 1365,
-            "withWarmModulesAndLockfile": 26,
-            "repeatInstall": 33,
-            "updatedDependencies": 32758
-          }
-        },
-        "yarn": {
-          "version": "6.0.0-rc.23",
-          "results": {
-            "firstInstall": 42294,
-            "withWarmModules": 51126,
-            "withLockfile": 38372,
-            "withWarmCacheAndModules": 10213,
-            "withWarmCache": 8987,
-            "withWarmCacheAndLockfile": 7124,
-            "withWarmModulesAndLockfile": 41368,
-            "repeatInstall": 8059,
-            "updatedDependencies": 20094
-          }
-        },
-        "bun": {
-          "version": "1.4.4",
-          "results": {
-            "firstInstall": 6170,
-            "withWarmModules": 5437,
-            "withLockfile": 5138,
-            "withWarmCacheAndModules": 2645,
-            "withWarmCache": 799,
-            "withWarmCacheAndLockfile": 739,
-            "withWarmModulesAndLockfile": 132,
-            "repeatInstall": 1628,
-            "updatedDependencies": 5155
+            "repeatInstall": 32,
+            "updatedDependencies": 21850
           }
         }
       }
@@ -368,8 +158,8 @@
             "withWarmModules": 3581,
             "withLockfile": 2168,
             "withWarmCacheAndModules": 3619,
-            "withWarmCache": 1566,
-            "withWarmCacheAndLockfile": 998,
+            "withWarmCache": 1319,
+            "withWarmCacheAndLockfile": 977,
             "withWarmModulesAndLockfile": 326,
             "repeatInstall": 337,
             "updatedDependencies": 11424
@@ -379,98 +169,28 @@
           "version": "11.28.9",
           "results": {
             "firstInstall": 2909,
-            "withWarmModules": 309,
+            "withWarmModules": 287,
             "withLockfile": 2446,
-            "withWarmCacheAndModules": 309,
-            "withWarmCache": 1437,
-            "withWarmCacheAndLockfile": 1467,
-            "withWarmModulesAndLockfile": 300,
+            "withWarmCacheAndModules": 300,
+            "withWarmCache": 1158,
+            "withWarmCacheAndLockfile": 1034,
+            "withWarmModulesAndLockfile": 276,
             "repeatInstall": 309,
-            "updatedDependencies": 5677
+            "updatedDependencies": 4173
           }
         },
         "pnpm12": {
           "version": "12.18.0",
           "results": {
-            "firstInstall": 4530,
-            "withWarmModules": 42,
-            "withLockfile": 4318,
-            "withWarmCacheAndModules": 65,
-            "withWarmCache": 185,
-            "withWarmCacheAndLockfile": 153,
-            "withWarmModulesAndLockfile": 27,
-            "repeatInstall": 35,
-            "updatedDependencies": 27912
-          }
-        },
-        "pnpm12_global_virtual_store": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 4853,
-            "withWarmModules": 4511,
-            "withLockfile": 4441,
-            "withWarmCacheAndModules": 55,
-            "withWarmCache": 101,
-            "withWarmCacheAndLockfile": 71,
-            "withWarmModulesAndLockfile": 4349,
-            "repeatInstall": 43,
-            "updatedDependencies": 31276
-          }
-        },
-        "pnpm12_hoisted": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 5823,
-            "withWarmModules": 47,
-            "withLockfile": 6033,
-            "withWarmCacheAndModules": 54,
-            "withWarmCache": 395,
-            "withWarmCacheAndLockfile": 350,
-            "withWarmModulesAndLockfile": 28,
-            "repeatInstall": 36,
-            "updatedDependencies": 31383
-          }
-        },
-        "pnpm_pnpr": {
-          "version": "12.18.0",
-          "results": {
-            "firstInstall": 4212,
-            "withWarmModules": 36,
-            "withLockfile": 3700,
-            "withWarmCacheAndModules": 50,
-            "withWarmCache": 232,
-            "withWarmCacheAndLockfile": 154,
-            "withWarmModulesAndLockfile": 25,
-            "repeatInstall": 34,
-            "updatedDependencies": 25991
-          }
-        },
-        "yarn": {
-          "version": "6.0.0-rc.23",
-          "results": {
-            "firstInstall": 5661,
-            "withWarmModules": 5208,
-            "withLockfile": 4460,
-            "withWarmCacheAndModules": 1495,
-            "withWarmCache": 1252,
-            "withWarmCacheAndLockfile": 805,
-            "withWarmModulesAndLockfile": 4651,
-            "repeatInstall": 883,
-            "updatedDependencies": 16000
-          }
-        },
-        "bun": {
-          "version": "1.4.4",
-          "results": {
-            "firstInstall": 2064,
-            "withWarmModules": 1959,
-            "withLockfile": 1698,
-            "withWarmCacheAndModules": 431,
-            "withWarmCache": 93,
-            "withWarmCacheAndLockfile": 79,
-            "withWarmModulesAndLockfile": 22,
-            "repeatInstall": 191,
-            "updatedDependencies": 4228
+            "firstInstall": 3467,
+            "withWarmModules": 39,
+            "withLockfile": 2761,
+            "withWarmCacheAndModules": 60,
+            "withWarmCache": 168,
+            "withWarmCacheAndLockfile": 149,
+            "withWarmModulesAndLockfile": 26,
+            "repeatInstall": 27,
+            "updatedDependencies": 26043
           }
         }
       }
@@ -486,22 +206,6 @@
           "cleanInstall": 1687.26,
           "warmStoreInstall": 132.92,
           "runInProject": 8.47
-        }
-      },
-      "fnm": {
-        "version": "1.39.0",
-        "results": {
-          "cleanInstall": 2395.34,
-          "warmStoreInstall": 2478.31,
-          "runInProject": 3.97
-        }
-      },
-      "nvm": {
-        "version": "0.41.0",
-        "results": {
-          "cleanInstall": 3193.5,
-          "warmStoreInstall": 2883.2,
-          "runInProject": 64.02
         }
       }
     }

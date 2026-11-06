@@ -8,11 +8,28 @@ This repository measures; it does not present. It writes one file — `benchmark
 
 ```
 pnpm install
-pnpm run benchmark
+BENCHMARK_MANAGERS=npm,pnpm11,pnpm12 pnpm benchmark
 pnpm run generate-chart to generate a png 
 ```
 
-A run measures every package manager, appends the timings to `results/<manager>/<version>/<fixture>.yaml`, and rewrites `benchmarks.json` from them. The published number for a tool at a version is the minimum of the samples recorded for it — the statistic lives here rather than downstream, because only the code that took the samples knows what they are samples of.
+### Benchmark keys
+
+Each package manager is identified by a key, defined in `commandsMap.js`. The key names the results folder (`results/<key>/`) and the entry in `benchmarks.json`.
+
+| Key | What it measures |
+|---|---|
+| `npm` | npm |
+| `pnpm11` | pnpm 11 (the `latest-11` line) |
+| `pnpm12` | pnpm 12 |
+| `pnpm12_global_virtual_store` | pnpm 12 with `virtualStoreType: global` |
+| `pnpm12_hoisted` | pnpm 12 with `nodeLinker: hoisted` |
+| `pnpm_pnpr` | pnpm 12 resolving on the pnpr server and installing from its tar registry |
+| `yarn` | Yarn 6 |
+| `bun` | Bun |
+
+Set `BENCHMARK_MANAGERS` to a comma-separated list of keys to measure only those, for example `BENCHMARK_MANAGERS=npm,pnpm12 pnpm benchmark`. An unknown key fails the run. A filtered run provisions and measures only the listed managers (pnpm 12 and the pnpr registry are always started, since the registry warm-up needs them), skips the Node.js version-manager section, and records samples under `results/` and prints the minimums, but leaves `benchmarks.json` and `versions.json` untouched. `--report-only` cannot be combined with it.
+
+A run without `BENCHMARK_MANAGERS` measures every package manager, appends the timings to `results/<manager>/<version>/<fixture>.yaml`, and rewrites `benchmarks.json` from them. The published number for a tool at a version is the minimum of the samples recorded for it — the statistic lives here rather than downstream, because only the code that took the samples knows what they are samples of.
 
 `pnpm run report` rewrites `benchmarks.json` from results already recorded, without provisioning a package manager or starting a registry. It measures nothing, so it cannot invent a number a measuring run failed to record; it fails instead.
 

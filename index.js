@@ -47,14 +47,14 @@ const allPmConfigs = [
   { key: 'pnpm12' },
   // The same pnpm 12 again, linking differently: a virtual store shared
   // between projects, and a flat `node_modules` with no virtual store at all.
-  { key: 'pnpm12_global_virtual_store' },
-  { key: 'pnpm12_hoisted' },
+  //{ key: 'pnpm12_global_virtual_store' },
+  //{ key: 'pnpm12_hoisted' },
   // The same pnpm 12 as the row above, resolving the dependency graph on the
   // registry instead of walking it itself, so pnpr is the only difference
   // between the two.
-  { key: 'pnpm_pnpr' },
-  { key: 'yarn' },
-  { key: 'bun' },
+  // { key: 'pnpm_pnpr' },
+  // { key: 'yarn' },
+  //{ key: 'bun' },
 ]
 
 // `BENCHMARK_MANAGERS=npm,pnpm12` measures just those managers: nothing else is
