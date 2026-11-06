@@ -7,3 +7,9 @@
 - cleanInstall: 1687.26
   warmStoreInstall: 147.08
   runInProject: 8.64
+- cleanInstall: 6003.53
+  warmStoreInstall: 490.68
+  runInProject: 17.33
+- cleanInstall: 5329.17
+  warmStoreInstall: 493.01
+  runInProject: 18.82

@@ -54,15 +54,18 @@ export function bootstrapInstaller (setupDir) {
  * PATH and quietly measure that version instead of the one being benchmarked.
  * That is why every install here throws on failure.
  */
-export function provisionPackageManagers (installerPnpm, managersDirs) {
-  provision(installerPnpm, managersDirs.npm, ['add', '--global', 'npm@latest'])
-  provisionPnpm11(installerPnpm, managersDirs.pnpm11)
+export function provisionPackageManagers (installerPnpm, managersDirs, only = null) {
+  const wanted = (...keys) => !only || keys.some((key) => only.includes(key))
+  // pnpm12 is also what the registry's populate pass installs with, so it is
+  // provisioned whenever anything is measured.
+  if (wanted('npm')) provision(installerPnpm, managersDirs.npm, ['add', '--global', 'npm@latest'])
+  if (wanted('pnpm11')) provisionPnpm11(installerPnpm, managersDirs.pnpm11)
   provisionPnpm12(installerPnpm, managersDirs.pnpm12)
   // `yarn@6` rather than `yarn@latest`: a specifier that doesn't commit to a
   // major resolves to Yarn Berry from npm, while the benchmark measures the
   // current Yarn line — the Rust rewrite released on GitHub.
-  provision(installerPnpm, managersDirs.yarn, ['add', '--global', 'yarn@6'])
-  provision(installerPnpm, managersDirs.bun, ['add', '--global', 'bun@latest'])
+  if (wanted('yarn')) provision(installerPnpm, managersDirs.yarn, ['add', '--global', 'yarn@6'])
+  if (wanted('bun')) provision(installerPnpm, managersDirs.bun, ['add', '--global', 'bun@latest'])
 }
 
 /**

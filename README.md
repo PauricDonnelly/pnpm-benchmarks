@@ -9,6 +9,7 @@ This repository measures; it does not present. It writes one file — `benchmark
 ```
 pnpm install
 pnpm run benchmark
+pnpm run generate-chart to generate a png 
 ```
 
 A run measures every package manager, appends the timings to `results/<manager>/<version>/<fixture>.yaml`, and rewrites `benchmarks.json` from them. The published number for a tool at a version is the minimum of the samples recorded for it — the statistic lives here rather than downstream, because only the code that took the samples knows what they are samples of.

@@ -1,0 +1,36 @@
+{
+  "name": "notarial-orbit-stub",
+  "version": "1.0.0",
+  "description": "Notarial stub for backoffice Orbit service",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "main": "server.js",
+  "type": "module",
+  "author": "FCDO",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky",
+    "typecheck": "tsc --noEmit",
+    "format": "biome format --write .",
+    "lint": "biome lint --write .",
+    "assist": "biome check --formatter-enabled=false --linter-enabled=false --write .",
+    "quality": "pnpm typecheck && pnpm format && pnpm lint && pnpm assist",
+    "security": "pnpm audit --audit-level=moderate",
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx watch ./src/server.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.12.7",
+    "http-status-codes": "^2.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "^26.6.5",
+    "husky": "^9.1.7",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
