@@ -41,21 +41,36 @@ const VERSIONS_FILE = path.join(DIRNAME, 'versions.json')
 // key means to a reader — and whether a reader is shown it at all — is the
 // reading side's business. pnpm.io publishes npm and the pnpm columns; the
 // rest are measured for comparisons of our own and reported just the same.
-const pmConfigs = [
+const allPmConfigs = [
   { key: 'npm' },
   { key: 'pnpm11' },
   { key: 'pnpm12' },
   // The same pnpm 12 again, linking differently: a virtual store shared
   // between projects, and a flat `node_modules` with no virtual store at all.
-  { key: 'pnpm12_global_virtual_store' },
-  { key: 'pnpm12_hoisted' },
+  //{ key: 'pnpm12_global_virtual_store' },
+  //{ key: 'pnpm12_hoisted' },
   // The same pnpm 12 as the row above, resolving the dependency graph on the
   // registry instead of walking it itself, so pnpr is the only difference
   // between the two.
-  { key: 'pnpm_pnpr' },
-  { key: 'yarn' },
-  { key: 'bun' },
+  // { key: 'pnpm_pnpr' },
+  // { key: 'yarn' },
+  //{ key: 'bun' },
 ]
+
+// `BENCHMARK_MANAGERS=npm,pnpm12` measures just those managers: nothing else is
+// provisioned or measured, and since the result would be a partial manifest
+// nothing is published — the samples are recorded under `results/` and the
+// minimums printed.
+const selectedKeys = process.env.BENCHMARK_MANAGERS
+  ? process.env.BENCHMARK_MANAGERS.split(',').map((key) => key.trim()).filter(Boolean)
+  : null
+if (selectedKeys) {
+  const unknown = selectedKeys.filter((key) => !allPmConfigs.some((config) => config.key === key))
+  if (unknown.length > 0) {
+    throw new Error(`BENCHMARK_MANAGERS names unknown package managers: ${unknown.join(', ')}. Known: ${allPmConfigs.map(({ key }) => key).join(', ')}.`)
+  }
+}
+const pmConfigs = selectedKeys ? allPmConfigs.filter(({ key }) => selectedKeys.includes(key)) : allPmConfigs
 
 const tests = [
   'firstInstall',
@@ -97,6 +112,7 @@ run()
  */
 async function run () {
   if (process.argv.includes('--report-only')) {
+    if (selectedKeys) throw new Error('BENCHMARK_MANAGERS selects what to measure; --report-only reports every manager.')
     await report()
     return
   }
@@ -125,7 +141,7 @@ async function report () {
       throw new Error(`The versions recorded at ${versionsFile} carry no \`${field}\`.`)
     }
   }
-  for (const { key } of pmConfigs) {
+  for (const { key } of allPmConfigs) {
     if (!versions.packageManagers[key]) {
       throw new Error(`The versions recorded at ${versionsFile} carry no version for ${key}.`)
     }
@@ -136,7 +152,7 @@ async function report () {
   // clock rather than by anything here.
   for (const { name, skipManagers = [] } of fixtures) {
     for (const key of skipManagers) {
-      if (!pmConfigs.some((config) => config.key === key)) {
+      if (!allPmConfigs.some((config) => config.key === key)) {
         throw new Error(`Fixture ${name} skips ${key}, which is not a measured package manager.`)
       }
     }
@@ -214,8 +230,8 @@ async function measure () {
   // pnpm 12 installs the other package managers natively, so one bootstrapped
   // installer provisions everything the benchmark measures.
   const installerPnpm = bootstrapInstaller(path.join(tmpDir, 'setup'))
-  provisionPackageManagers(installerPnpm, managersDirs)
-  cloneNvm(managersDirs.nvm)
+  provisionPackageManagers(installerPnpm, managersDirs, selectedKeys)
+  if (!selectedKeys) cloneNvm(managersDirs.nvm)
   // Every package manager installs through the same registry of our own,
   // reached across an emulated network link. A registry on the benchmark
   // machine itself would hide what resolving a dependency graph costs, which is
@@ -289,6 +305,14 @@ async function measure () {
     // same job, which is how a benchmark ends up measuring a server whose
     // tarball URLs point at a link that no longer exists.
     registry.stop()
+  }
+
+  if (selectedKeys) {
+    console.log(`Measured ${selectedKeys.join(', ')} only; benchmarks.json and versions.json were left untouched.`)
+    for (const { name, packageManagers } of measuredFixtures) {
+      console.log(name, JSON.stringify(packageManagers, null, 2))
+    }
+    return
   }
 
   const nodeManagers = await collectNodeVersionManagers({

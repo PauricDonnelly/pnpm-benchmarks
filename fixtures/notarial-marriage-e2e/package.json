@@ -1,0 +1,58 @@
+{
+  "name": "notarial-marriage-e2e",
+  "version": "1.0.0",
+  "description": "An end-to-end smoke test suite for the Notarial Marriage application using Playwright and BDD.",
+  "private": true,
+  "type": "module",
+  "engineStrict": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "author": "FCDO",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome lint --write .",
+    "format:js": "biome format --write .",
+    "format:gherkin": "prettier --write --plugin prettier-plugin-gherkin **/*.feature",
+    "format": "pnpm format:js && pnpm format:gherkin",
+    "assist": "biome check --formatter-enabled=false --linter-enabled=false --write .",
+    "quality": "pnpm typecheck && pnpm format && pnpm lint && pnpm assist",
+    "security": "pnpm audit --audit-level=moderate",
+    "browsers:install": "playwright install chromium",
+    "test": "bddgen && playwright test",
+    "test:headed": "pnpm test -- --headed",
+    "test:debug": "pnpm test -- --debug",
+    "test:ui": "pnpm test -- --ui",
+    "report": "playwright show-report playwright-report",
+    "test:browserstack:run": "bddgen && E2E_SKIP_AXE=true browserstack-node-sdk playwright test generated-tests",
+    "test:browserstack:weekly": "BROWSERSTACK_CONFIG_FILE=browserstack.yml pnpm test:browserstack:run -- --workers=6 --timeout=120000 && pnpm test:browserstack:mobile",
+    "test:browserstack:mobile": "BROWSERSTACK_CONFIG_FILE=browserstack.mobile.yml pnpm test:browserstack:run -- --workers=2 --timeout=180000",
+    "test:browserstack:feature": "BROWSERSTACK_CONFIG_FILE=browserstack.feature.yml pnpm test:browserstack:run -- --workers=1 --timeout=120000",
+    "test:browserstack:feature:percy": "BROWSERSTACK_CONFIG_FILE=browserstack.feature.yml ENABLE_PERCY=true percy exec -- pnpm test:browserstack:run -- --workers=1 --timeout=240000",
+    "test:browserstack:load": "bddgen && BROWSERSTACK_LOAD_TEST=true browserstack-cli load run --config-file browserstack-load.yml"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@biomejs/biome": "2.5.15",
+    "@percy/cli": "^1.32.11",
+    "@percy/playwright": "^1.1.2",
+    "@playwright/test": "~1.63.0",
+    "@types/node": "^26.4.4",
+    "browserstack-node-sdk": "^1.74.0",
+    "dotenv": "^18.0.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "playwright-bdd": "^9.2.1",
+    "playwright-core": "~1.63.0",
+    "prettier": "^3.9.9",
+    "prettier-plugin-gherkin": "^4.0.0",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "browserstack-node-sdk": {
+      "basic-ftp": "6.2.1"
+    }
+  }
+}

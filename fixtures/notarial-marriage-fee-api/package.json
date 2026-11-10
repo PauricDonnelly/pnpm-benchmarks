@@ -1,0 +1,43 @@
+{
+  "name": "notarial-marriage-fee-api",
+  "version": "1.0.0",
+  "description": "Notarial marriage fee API to serve marriage document and postage fees",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "24.x"
+  },
+  "main": "app.js",
+  "type": "module",
+  "author": "FCDO",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky",
+    "typecheck": "tsc --noEmit",
+    "format": "biome format --write .",
+    "lint": "biome lint  --write .",
+    "assist": "biome check --formatter-enabled=false --linter-enabled=false --write .",
+    "quality": "pnpm typecheck && pnpm format && pnpm lint && pnpm assist",
+    "security": "pnpm audit --audit-level=moderate",
+    "test:unit": "vitest run --coverage",
+    "test": "pnpm test:unit",
+    "build": "node esbuild.config.mjs",
+    "start": "tsx watch ./src/app.ts"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "fastify": "^5.12.7",
+    "http-status-codes": "^2.3.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "^26.6.4",
+    "@vitest/coverage-v8": "^5.0.4",
+    "esbuild": "^0.28.2",
+    "husky": "^9.1.7",
+    "json-schema-to-ts": "^3.1.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.4"
+  }
+}

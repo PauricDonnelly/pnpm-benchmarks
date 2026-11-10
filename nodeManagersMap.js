@@ -5,12 +5,12 @@ export const nodeManagersMap = {
     scenario: 'pnpm12',
     name: 'pnpm',
   },
-  fnm: {
-    scenario: 'fnm',
-    name: 'fnm',
-  },
-  nvm: {
-    scenario: 'nvm',
-    name: 'nvm',
-  },
+  //fnm: {
+  // scenario: 'fnm',
+  //   name: 'fnm',
+  // },
+  // nvm: {
+  //   scenario: 'nvm',
+  //   name: 'nvm',
+  // },
 }

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1000" viewBox="0 0 1800 1000" role="img" aria-labelledby="title description">
+<title id="title">JavaScript package manager benchmarks</title>
+<desc id="description">Benchmark timings for package manager installation scenarios. Each x-axis scenario is explained below the heatmap, followed by a note on where the temporary package cache is kept. Cell colors use a logarithmic scale and each cell shows its exact time.</desc>
+<defs><linearGradient id="time-scale"><stop offset="0%" stop-color="rgb(24,126,117)"/><stop offset="35%" stop-color="rgb(137,177,147)"/><stop offset="68%" stop-color="rgb(229,199,116)"/><stop offset="100%" stop-color="rgb(199,99,79)"/></linearGradient></defs>
+<rect width="100%" height="100%" fill="#f4f3ee"/>
+<g font-family="Avenir Next, Helvetica Neue, sans-serif" fill="#202c33">
+<text x="72" y="94" font-size="44" font-weight="700">JavaScript package manager benchmarks</text>
+<text x="74" y="145" font-size="21" fill="#536168">notarial-orbit-stub · install time · lower is faster</text>
+<text x="74" y="184" font-size="16" fill="#647178">Measured 2026-11-09 · Node v24.19.0 · pnpr 0.1.0-alpha.18 · 50 ms RTT · 200 Mbps</text>
+<text x="74" y="247" font-size="14" font-weight="700" letter-spacing="1.2" fill="#647178">ELAPSED TIME</text>
+<rect x="74" y="263" width="230" height="16" rx="4" fill="url(#time-scale)"/>
+<text x="74" y="301" font-size="14" fill="#536168">Faster</text>
+<text x="304" y="301" text-anchor="end" font-size="14" fill="#536168">Slower</text>
+<text x="74" y="324" font-size="14" fill="#647178">Color scale is logarithmic; values are shown in each cell.</text>
+<text x="445" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="445" dy="0">First</tspan><tspan x="445" dy="20">install</tspan></text>
+<text x="595" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="595" dy="0">Warm</tspan><tspan x="595" dy="20">modules</tspan></text>
+<text x="745" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="745" dy="0">With</tspan><tspan x="745" dy="20">lockfile</tspan></text>
+<text x="895" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="895" dy="0">Warm cache</tspan><tspan x="895" dy="20">+ modules</tspan></text>
+<text x="1045" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="1045" dy="0">Warm</tspan><tspan x="1045" dy="20">cache</tspan></text>
+<text x="1195" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="1195" dy="0">Warm cache</tspan><tspan x="1195" dy="20">+ lockfile</tspan></text>
+<text x="1345" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="1345" dy="0">Warm modules</tspan><tspan x="1345" dy="20">+ lockfile</tspan></text>
+<text x="1495" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="1495" dy="0">Repeat</tspan><tspan x="1495" dy="20">install</tspan></text>
+<text x="1645" y="337" text-anchor="middle" font-size="15" font-weight="600"><tspan x="1645" dy="0">Updated</tspan><tspan x="1645" dy="20">dependencies</tspan></text>
+<text x="74" y="413" font-size="18" font-weight="600">npm</text>
+<text x="74" y="434" font-size="13" fill="#647178">12.2.2</text>
+<rect x="373" y="388" width="144" height="62" rx="9" fill="rgb(225,186,111)"/>
+<text x="445" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">3.8 s</text>
+<rect x="523" y="388" width="144" height="62" rx="9" fill="rgb(226,189,112)"/>
+<text x="595" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">3.6 s</text>
+<rect x="673" y="388" width="144" height="62" rx="9" fill="rgb(218,196,120)"/>
+<text x="745" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">2.2 s</text>
+<rect x="823" y="388" width="144" height="62" rx="9" fill="rgb(226,189,112)"/>
+<text x="895" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">3.6 s</text>
+<rect x="973" y="388" width="144" height="62" rx="9" fill="rgb(198,191,127)"/>
+<text x="1045" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">1.3 s</text>
+<rect x="1123" y="388" width="144" height="62" rx="9" fill="rgb(186,189,131)"/>
+<text x="1195" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">977 ms</text>
+<rect x="1273" y="388" width="144" height="62" rx="9" fill="rgb(141,178,145)"/>
+<text x="1345" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">326 ms</text>
+<rect x="1423" y="388" width="144" height="62" rx="9" fill="rgb(143,178,145)"/>
+<text x="1495" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">337 ms</text>
+<rect x="1573" y="388" width="144" height="62" rx="9" fill="rgb(210,136,93)"/>
+<text x="1645" y="426" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">11.4 s</text>
+<text x="74" y="481" font-size="18" font-weight="600">pnpm 11</text>
+<text x="74" y="502" font-size="13" fill="#647178">11.28.9</text>
+<rect x="373" y="456" width="144" height="62" rx="9" fill="rgb(229,198,116)"/>
+<text x="445" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">2.9 s</text>
+<rect x="523" y="456" width="144" height="62" rx="9" fill="rgb(136,177,147)"/>
+<text x="595" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">287 ms</text>
+<rect x="673" y="456" width="144" height="62" rx="9" fill="rgb(223,198,118)"/>
+<text x="745" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">2.4 s</text>
+<rect x="823" y="456" width="144" height="62" rx="9" fill="rgb(138,177,147)"/>
+<text x="895" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">300 ms</text>
+<rect x="973" y="456" width="144" height="62" rx="9" fill="rgb(193,190,128)"/>
+<text x="1045" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">1.2 s</text>
+<rect x="1123" y="456" width="144" height="62" rx="9" fill="rgb(188,189,130)"/>
+<text x="1195" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">1.0 s</text>
+<rect x="1273" y="456" width="144" height="62" rx="9" fill="rgb(134,176,146)"/>
+<text x="1345" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">276 ms</text>
+<rect x="1423" y="456" width="144" height="62" rx="9" fill="rgb(139,178,146)"/>
+<text x="1495" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">309 ms</text>
+<rect x="1573" y="456" width="144" height="62" rx="9" fill="rgb(224,182,110)"/>
+<text x="1645" y="494" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">4.2 s</text>
+<text x="74" y="549" font-size="18" font-weight="600">pnpm 12</text>
+<text x="74" y="570" font-size="13" fill="#647178">12.18.0</text>
+<rect x="373" y="524" width="144" height="62" rx="9" fill="rgb(226,190,113)"/>
+<text x="445" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">3.5 s</text>
+<rect x="523" y="524" width="144" height="62" rx="9" fill="rgb(43,135,122)"/>
+<text x="595" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">39 ms</text>
+<rect x="673" y="524" width="144" height="62" rx="9" fill="rgb(228,199,116)"/>
+<text x="745" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">2.8 s</text>
+<rect x="823" y="524" width="144" height="62" rx="9" fill="rgb(52,138,124)"/>
+<text x="895" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">47 ms</text>
+<rect x="973" y="524" width="144" height="62" rx="9" fill="rgb(111,165,140)"/>
+<text x="1045" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">168 ms</text>
+<rect x="1123" y="524" width="144" height="62" rx="9" fill="rgb(106,163,139)"/>
+<text x="1195" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#202c33">149 ms</text>
+<rect x="1273" y="524" width="144" height="62" rx="9" fill="rgb(24,126,117)"/>
+<text x="1345" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">26 ms</text>
+<rect x="1423" y="524" width="144" height="62" rx="9" fill="rgb(26,127,117)"/>
+<text x="1495" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">27 ms</text>
+<rect x="1573" y="524" width="144" height="62" rx="9" fill="rgb(199,99,79)"/>
+<text x="1645" y="562" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">26.0 s</text>
+<text x="74" y="595" font-size="24" font-weight="700">Test scenarios</text>
+<text x="74" y="619" font-family="Menlo, Monaco, monospace" font-size="12" fill="#536168">npm install --no-fund --no-audit --ignore-scripts --cache=cache --legacy-peer-deps --registry=&lt;benchmark-registry&gt;</text>
+<text x="74" y="638" font-family="Menlo, Monaco, monospace" font-size="12" fill="#536168">pnpm install --ignore-scripts --registry=&lt;benchmark-registry&gt;</text>
+<text x="74" y="657" font-size="12" fill="#536168">The registry placeholder resolves to the benchmark registry; updated-dependencies adds --no-frozen-lockfile to pnpm.</text>
+<text x="74" y="688" font-size="14" font-weight="700">First install</text>
+<text x="74" y="710" font-size="14" fill="#536168">Install from scratch with no lockfile, node_modules, or cache.</text>
+<text x="649" y="688" font-size="14" font-weight="700">Warm modules</text>
+<text x="649" y="710" font-size="14" fill="#536168">Keep node_modules; remove the lockfile and package cache.</text>
+<text x="1224" y="688" font-size="14" font-weight="700">With lockfile</text>
+<text x="1224" y="710" font-size="14" fill="#536168">Keep the lockfile; remove node_modules and package cache.</text>
+<text x="74" y="768" font-size="14" font-weight="700">Warm cache + modules</text>
+<text x="74" y="790" font-size="14" fill="#536168">Keep node_modules and package cache; remove the lockfile.</text>
+<text x="649" y="768" font-size="14" font-weight="700">Warm cache</text>
+<text x="649" y="790" font-size="14" fill="#536168">Keep package cache; remove node_modules and lockfile.</text>
+<text x="1224" y="768" font-size="14" font-weight="700">Warm cache + lockfile</text>
+<text x="1224" y="790" font-size="14" fill="#536168">Keep lockfile and package cache; remove node_modules.</text>
+<text x="74" y="848" font-size="14" font-weight="700">Warm modules + lockfile</text>
+<text x="74" y="870" font-size="14" fill="#536168">Keep node_modules and lockfile; remove package cache.</text>
+<text x="649" y="848" font-size="14" font-weight="700">Repeat install</text>
+<text x="649" y="870" font-size="14" fill="#536168">Run again after first install, keeping its modules, lockfile, and cache.</text>
+<text x="1224" y="848" font-size="14" font-weight="700">Updated dependencies</text>
+<text x="1224" y="870" font-size="14" fill="#536168">Add extra dependencies; retain modules and rewarm the package cache.</text>
+<rect x="74" y="916" width="1650" height="58" rx="8" fill="#e5e9e3"/>
+<rect x="74" y="916" width="4" height="58" rx="2" fill="#187e75"/>
+<text x="96" y="940" font-size="12" font-weight="700" letter-spacing="1" fill="#536168">CACHE NOTE</text>
+<text x="96" y="960" font-size="14" fill="#202c33">Warm-cache tests check whether installs are faster when cached packages can be reused, as in CI after restoring a cache. The temporary cache lives at TMP/&lt;manager-scenario&gt;/&lt;fixture&gt;/cache and is cleared between scenarios.</text>
+</g></svg>

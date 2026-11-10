@@ -1,7 +1,0 @@
-{
-  "name": "bit-cli",
-  "version": "0.0.1",
-  "dependencies": {
-    "@teambit/bit": "2.2.1"
-  }
-}
